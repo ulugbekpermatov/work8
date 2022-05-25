@@ -1,0 +1,37 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header ul, header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #252525;
+}
+header .container {
+  width: 87%;
+  margin: 0 auto;
+  color: #c10000;
+  padding-top: 20px;
+}
+header ul {
+  width: 70%;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  color: #c10000;
+  text-decoration: none;
+  transition: 0.3s all linear;
+}
+header ul li a:hover {
+  font-size: 18px;
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,55 @@
+@import "./scss2.scss";
+
+$font_color: #c10000;
+
+
+@mixin hover_elements($hover-prop, $hover-color, $hover-prop2,
+$hover-color2) {
+    transition: 0.3s all linear;
+    &:hover {
+    #{$hover-prop}: $hover-color;
+    #{$hover-prop2}: $hover-color2;
+    }
+}
+
+
+
+header{
+    background-color: #252525;
+
+    .container{
+        width: 87%;
+        margin: 0 auto;
+
+        @extend %flex-bitween;
+        color: $font_color;
+
+        padding: {
+            top:20px;
+        }
+    }
+
+    ul{
+        width: 70%;
+        @extend %flex-bitween;
+
+
+        li{
+            list-style: none;
+
+            a{
+                color: $font_color;
+                text-decoration: none;
+
+                @include hover_elements(font-size, 18px, color,green)
+
+            }
+        }
+    }
+
+
+}
+
+
+
+
